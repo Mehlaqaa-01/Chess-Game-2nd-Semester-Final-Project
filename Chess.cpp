@@ -142,7 +142,16 @@ bool King::isValidMove(int sx, int sy, int dx, int dy, Piece* board[8][8]) {
 char King:: getSymbol() { 
 	return (color == 'W') ? 'K' : 'k'; 
 }
-                        /* Board Class */
+                        /* Board Class */   
+/****************************************************************** — BOARD LOGIC
+	Responsibilities:
+	- Board constructor
+	- setUp()
+	- display()
+	- move()
+	- capture handling
+	- turn validation
+******************************************************************/
 Board::Board() {
 	for (int i = 0; i < 8; i++) {
 		for (int j = 0; j < 8; j++) {
@@ -253,7 +262,7 @@ bool Board::move(char turn, bool& kingcaptured) {
 	grid[sx][sy] = nullptr;
 
 	return true;
-}
+}      // Board logic implementation 
 
 /* Game Class */
 
