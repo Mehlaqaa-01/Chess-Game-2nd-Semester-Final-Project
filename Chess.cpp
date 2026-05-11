@@ -5,6 +5,7 @@
 #include<cmath>
 #include"Chess.h"
 using namespace std;
+// I handled the movements of all pieces and their validation
                                /* Piece class */
 Piece::Piece(char c) {
 	color = c;
